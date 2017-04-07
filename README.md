@@ -8,6 +8,7 @@ To see an example, check out [this demo](https://rob--w.github.io/grab-to-pan.js
 // Define the container that has to pan on grab
 var g2p = new GrabToPan({
     element: scrollableContainer,         // required
+    button: 0,                            // button to pan, 0: left-button, 1: middle-button, 2: right-button
     onActiveChanged: function(isActive) { // optional
         console.log('Grab-to-pan is ' + (isActive ? 'activated' : 'deactivated'));
     }
